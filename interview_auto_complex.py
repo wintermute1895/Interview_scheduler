@@ -1,8 +1,8 @@
-import random
-import pandas as pd
 import datetime
+import random
 import re
-from collections import defaultdict
+
+import pandas as pd
 
 
 def generate_time_slots():
@@ -247,7 +247,6 @@ class InterviewScheduler:
             report.append("所有候选人均已安排")
 
         return "\n\n".join(report)
-
 
 if __name__ == "__main__":
     try:
