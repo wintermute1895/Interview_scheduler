@@ -1,6 +1,7 @@
 import random
-import pandas as pd
 from datetime import datetime, timedelta
+
+import pandas as pd
 
 
 def generate_random_time_slots():
@@ -47,7 +48,6 @@ def generate_random_data(num_candidates=200):
         })
 
     return pd.DataFrame(data)
-
 
 # 生成数据
 df = generate_random_data()

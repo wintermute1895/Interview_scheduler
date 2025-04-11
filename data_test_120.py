@@ -1,6 +1,7 @@
-import pandas as pd
 import random
 from datetime import datetime, timedelta
+
+import pandas as pd
 
 
 def generate_test_data():
@@ -33,7 +34,7 @@ def generate_test_data():
         },
 
         # 全局组长比例
-        'global_leader_ratio': 0.15  # 15%的全局组长比例
+        'global_leader_ratio': 0.15  # 15%的全局组长比例,可以降低一点
     }
 
     data = []
