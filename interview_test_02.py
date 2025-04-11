@@ -1,7 +1,7 @@
-import random
-import pandas as pd
 import datetime
-import re
+import random
+
+import pandas as pd
 
 
 def generate_time_slots():
@@ -25,27 +25,6 @@ def generate_time_slots():
         end_t = time_slots[i + 1]
         formatted.append(f"{start_t}-{end_t}")
     return formatted
-
-
-# 生成测试数据
-# groups = ['宣传', '教务', '后勤', '调研']
-# time_slots = generate_time_slots()
-# candidates = []
-
-
-# 生成200个候选人（示例数据）
-
-# for i in range(200):
-# group = random.choice(groups)
-# 随机生成3个可用时间段
-# available_times = random.sample(time_slots, k=3)
-# is_leader = random.choice([True, False, False, False])  # 降低组长比例
-# candidates.append({
-#  'id': i+1,
-# 'group': group,
-#   'available_times': available_times,
-# 'is_leader': is_leader
-# })
 
 def load_candidates(file_path):
     # 读取Excel文件（如果是CSV使用 pd.read_csv）
